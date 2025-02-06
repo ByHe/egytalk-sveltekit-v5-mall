@@ -14,7 +14,6 @@ $db = new DbEgyTalk();
 
 $result['auth'] = false;
 $result['userdata'] = null;
-$statusCode = 401;
 
 // Om redan inloggad skicka data
 if (isset($_SESSION['uid'])) {
@@ -31,6 +30,5 @@ if (isset($user) && !empty($user)) {
    $statusCode = 200;
 }
 
-http_response_code($statusCode);
 header('Content-Type: application/json');
 echo json_encode($result, JSON_UNESCAPED_UNICODE);
