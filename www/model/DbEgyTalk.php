@@ -180,7 +180,7 @@ class DbEgyTalk
 
          // Egen kod!
 
-         return $stmt->execute();
+         //return $stmt->execute();
       } catch (Exception $e) {
          return false;
       }
@@ -327,7 +327,7 @@ class DbEgyTalk
             
             // Egen kod!
 
-            $success = $stmt->execute();
+            //$success = $stmt->execute();
          } catch (Exception $e) {}
       }
 
